@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* Variables */
+:root {
+    /* Variables de colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gis-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /* fuentes */
+    --fuente: 'Roboto', sans-serif;
+    /* Tamaños Tipograficos */
+    --parrafo: 12px;
+    --titulares: 24px;
+    --precio: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px;
+}
+
+/* Como utilizar las variables 
+body{
+    background-color: var(--amarillo);
+} */
+
+/* Estilos Generales */
+
+* {
+    
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--gris-claro);
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: var(--parrafo);
+}
+
+/* HEADER */
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+}
+
+header div.logo {
+    width: 130px;
+    margin-left: 25px;
+}
+
+header div.busqueda {
+    margin-left: 15px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header nav ul.lista-superior {
+    margin-bottom: 15px;
+}
+
+header nav ul li a {
+    font-size: var(--parrafo);
+}
+
+header nav {
+    display: none;
+}
+
+header div.burger-menu {
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 15px;
+    padding: 7px;
+    margin: 25px auto 0;
+
+}
+
+/* Main */
+main {
+    width: 90%;
+}
+
+main section article {
+    margin: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ebebeb;
+
+}
+
+main section article h5 {
+    margin: 10px 0 0 0;
+    color: var(--Gris-oscuro);
+    display: none;
+}
+
+main img.banner {
+    height: auto;
+}
+#camioneta{
+    color: var(--verde);
+    padding: 12px 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 2px solid var(--verde);
+    
+}
+
+.descuento{
+    color: var(--verde);
+}
+/* Footer */
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+
+}
+
+footer article {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+
+footer span {
+    font-size: var(--parrafo);
+}
+
+/* Navegacion Tablets */
+@media (min-width: 361px) {
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article h5 {
+        display: block;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header div.burger-menu {
+        display: none;
+    }
+}
